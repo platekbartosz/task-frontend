@@ -1,0 +1,31 @@
+$col-1: #000;
+$col-2: #fff;
+
+.nav-wrapper {
+  display: flex;
+
+  .btn {
+    padding: 15px 35px;
+    margin: 10px;
+    border: 2px solid $col-1;
+    border-radius: 5px;
+    color: $col-2;
+    background-color: $col-1;
+    cursor: pointer;
+
+    &:hover {
+      color: $col-1;
+      background-color: $col-2;
+    }
+  }
+}
+
+.photos-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .photo {
+    max-width: 30%;
+    object-fit: cover;
+  }
+}
